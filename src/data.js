@@ -1,82 +1,27 @@
-import componentsImg from "./assets/components.png";
-import propsImg from "./assets/config.png";
-import jsxImg from "./assets/jsx-ui.png";
-import stateImg from "./assets/state-mgmt.png";
+import hero1 from "../src/assets/images/desktop-image-hero-1.jpg";
+import hero2 from "../src/assets/images/desktop-image-hero-2.jpg";
+import hero3 from "../src/assets/images/desktop-image-hero-3.jpg";
 
-export const CORE_CONCEPTS = [
+export const SLIDES = [
   {
-    image: componentsImg,
-    title: "Components",
+    id: 1,
+    image: hero1,
+    title: "Discover innovative ways to decorate",
     description:
-      "The core UI building block - compose the user interface by combining multiple components.",
+      "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.",
   },
   {
-    image: jsxImg,
-    title: "JSX",
+    id: 2,
+    image: hero2,
+    title: "We are available all across the globe",
     description:
-      "Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.",
+      "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.",
   },
   {
-    image: propsImg,
-    title: "Props",
+    id: 3,
+    image: hero3,
+    title: "Manufactured with the best materials",
     description:
-      "Make components configurable (and therefore reusable) by passing input data to them.",
-  },
-  {
-    image: stateImg,
-    title: "State",
-    description:
-      "React-managed data which, when changed, causes the component to re-render & the UI to update.",
+      "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.",
   },
 ];
-
-export const EXAMPLES = {
-  components: {
-    title: "Components",
-    description:
-      "Components are the building blocks of React applications. A component is a self-contained module (HTML + optional CSS + JS) that renders some output.",
-    code: `
-function Welcome() {
-  return <h1>Hello, World!</h1>;
-}`,
-  },
-  jsx: {
-    title: "JSX",
-    description:
-      "JSX is a syntax extension to JavaScript. It is similar to a template language, but it has full power of JavaScript (e.g., it may output dynamic content).",
-    code: `
-<div>
-  <h1>Welcome {userName}</h1>
-  <p>Time to learn React!</p>
-</div>`,
-  },
-  props: {
-    title: "Props",
-    description:
-      "Components accept arbitrary inputs called props. They are like function arguments.",
-    code: `
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}`,
-  },
-  state: {
-    title: "State",
-    description:
-      "State allows React components to change their output over time in response to user actions, network responses, and anything else.",
-    code: `
-function Counter() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  function handleClick() {
-    setIsVisible(true);
-  }
-
-  return (
-    <div>
-      <button onClick={handleClick}>Show Details</button>
-      {isVisible && <p>Amazing details!</p>}
-    </div>
-  );
-}`,
-  },
-};
