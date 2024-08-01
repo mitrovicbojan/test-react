@@ -1,6 +1,6 @@
-import "./Hero.css";
 import { useState, useEffect } from "react";
 import { SLIDES } from "../data";
+import arrowImg from "../assets/images/icon-arrow.svg";
 
 export default function Hero() {
   const [slides, setSlides] = useState(SLIDES);
@@ -40,7 +40,7 @@ export default function Hero() {
             <div className="text-box">
               <h1 className="header-primary">{title}</h1>
               <p>{description}</p>
-              <button class="arrow-button">Shop now</button>
+              <button className="arrow-button">Shop now</button>
               <div className="btn-div">
                 <a className="prev" onClick={() => setIndex(index - 1)}></a>
                 <a className="next" onClick={() => setIndex(index + 1)}></a>
